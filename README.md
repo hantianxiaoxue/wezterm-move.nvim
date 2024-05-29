@@ -1,5 +1,6 @@
 # wezterm-move.nvim
 
+
 Navigate between `neovim` and [wezterm](https://wezterm.com/) panes.
 
 It's just like [smart-split.nvim](https://github.com/mrjones2014/smart-splits.nvim) but:
