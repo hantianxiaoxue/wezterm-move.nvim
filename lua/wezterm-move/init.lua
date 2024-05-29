@@ -9,7 +9,7 @@ end
 
 local function wezterm_exec(cmd)
   local command = vim.deepcopy(cmd)
-  table.insert(command, 1, "wezterm")
+  table.insert(command, 1, (vim.fn.has("wsl") or vim.fn.has("win32")) and "wezterm.exe" or "wezterm")
   table.insert(command, 2, "cli")
   return vim.fn.system(command)
 end
